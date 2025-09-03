@@ -1,0 +1,60 @@
+* {
+  /* outline: 2px solid red; */
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  color: rgb(44, 43, 43);
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(210, 203, 194);
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.center.heading {
+  font-style: italic;
+  font-weight: 500;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.par {
+  flex-wrap: wrap;
+  max-width: 600px;
+  margin: 20px auto;
+  font-size: 16px;
+}
+
+#experience {
+  padding-top: 5px;
+}
+
+.center li {
+  margin: 18px;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: unset;
+}
+
+.icons li {
+  margin: 10px;
+}
