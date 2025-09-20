@@ -1,5 +1,9 @@
+/* =================================== */
+/* MOBILE */
+/* =================================== */
+
 * {
-  /* outline: 2px solid red; */
+  outline: 2px solid rgb(25, 119, 54);
   font-family: "Merriweather", serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -14,6 +18,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: rgb(210, 203, 194);
+  font-size: 1rem;
 }
 
 header {
@@ -22,7 +27,9 @@ header {
 }
 nav ul {
   background-color: rgb(111, 115, 115);
-  box-shadow: 10px 5px 5px rgb(52, 51, 51);
+  box-shadow: 1em 0.5em 0.5em rgb(52, 51, 51);
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
   margin: 0;
   padding: 0;
 }
@@ -35,27 +42,36 @@ nav ul {
 
 li {
   list-style-type: none;
-  padding: 25px;
-  margin: 10px;
+  padding: 1.5em;
+  margin: 0.8em;
 }
 li a {
   text-decoration: none;
-  padding: 15px;
-  font-size: 22px;
-  border: solid transparent 2px;
+  padding: 0.8em;
+  font-size: 1.5rem;
+  border: solid transparent 0.2em;
 }
 
 .nav_bar li :hover {
-  background: whitesmoke;
-  border: solid whitesmoke 2px;
-  box-shadow: 3px 3px 5px rgb(169, 167, 167);
+  background: rgb(141, 140, 140);
+  border: solid rgb(159, 156, 156) 0.2em;
+  box-shadow: 0.2em 0.2em 0.3em rgb(167, 165, 165);
   border-radius: 30% 10%;
   opacity: 0.9;
 }
 
 #skills,
 #projects {
-  margin-top: 150px;
+  margin-top: 15em;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+.skills_background li {
+  background: whitesmoke;
+  border-radius: 30% 10%;
 }
 
 #projects_list li {
@@ -79,23 +95,65 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 1em;
 }
 
 .par {
   flex-wrap: wrap;
-  max-width: 600px;
-  margin: 20px auto;
-  font-size: 16px;
+  max-width: 30em;
+  margin: 1.25px auto;
+  font-size: 1.2rem;
 }
 
 #experience {
-  padding-top: 5px;
+  padding-top: 2em;
+}
+
+.container {
+  display: flex;
+  margin-top: 5em;
+}
+
+.job_title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-left: 1.25rem;
+  flex: 1;
+}
+
+p.bold_txt {
+  font-weight: bold;
+  margin: unset;
+}
+.date_location {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  margin-right: 1.25rem;
+  flex: 1;
+}
+
+.job_descr {
+  flex-wrap: wrap;
+  max-width: 25em;
+  margin: 1.25px auto;
+  font-size: 1.1rem;
+  margin-bottom: 8em;
+}
+
+.bullet::before {
+  content: "•";
+  color: black;
+  font-weight: bold;
 }
 
 .center li {
-  margin: 18px;
+  margin: 1.8em;
   font-weight: 600;
-  font-size: 17px;
+  font-size: 1.2rem;
 }
 
 .icons {
@@ -105,6 +163,100 @@ img {
   padding: unset;
 }
 
-.icons li {
-  margin: 10px;
+.icons li :hover {
+  color: whitesmoke;
+}
+
+/* =================================== */
+/* Small mobile */
+/* =================================== */
+/* 
+@media (min-width: 481px) {
+  .bullet {
+    width: 90%;
+  }
+} */
+
+/* =================================== */
+/* Phone */
+/* =================================== */
+
+@media (max-width: 600px) {
+  .nav_bar {
+    flex-direction: column;
+    align-items: center;
+  }
+  li {
+    padding: 0.3em;
+    margin: 0.2em;
+  }
+  li a {
+    padding: 0.1em;
+    font-size: 1rem;
+    border: solid transparent 0.2em;
+  }
+
+  .par {
+    width: 90%;
+  }
+
+  .center {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #skills,
+  #projects {
+    margin-top: 6em;
+  }
+}
+
+/* =================================== */
+/* TABLET */
+/* =================================== */
+@media (min-width: 768px) {
+  li {
+    padding: 0.6em;
+    margin: 0.5em;
+  }
+  li a {
+    color: rgb(68, 69, 66);
+    padding: 0.2em;
+    font-size: 1.2rem;
+  }
+  #skills,
+  #projects {
+    margin-top: 6em;
+  }
+}
+
+/* =================================== */
+/* DESKTOP */
+/* =================================== */
+@media (min-width: 1024px) {
+  li {
+    padding: 0.9em;
+    margin: 0.8em;
+  }
+  li a {
+    color: rgb(225, 230, 230);
+    padding: 0.4em;
+    font-size: 1.6rem;
+    border: solid transparent 0.2em;
+  }
+
+  #skills,
+  #projects {
+    margin-top: 10em;
+  }
+
+  .par {
+    font-size: 1.4rem;
+  }
+
+  .job_descr,
+  .date_location,
+  .job_title {
+    font-size: 1.2rem;
+  }
 }
