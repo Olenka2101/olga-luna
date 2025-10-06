@@ -55,9 +55,9 @@ li a {
 }
 
 .nav_bar li :hover {
-  background: #8d8c8c;
+  background: #757474;
   border: solid #9f9c9c 0.2em;
-  box-shadow: 0.2em 0.2em 0.3em #a7a5a5;
+  box-shadow: 0.2em 0.2em 0.2em #a7a5a5;
   border-radius: 30% 10%;
   opacity: 0.9;
 }
@@ -75,11 +75,21 @@ h2 {
   background: #f5f5f5;
   border-radius: 30% 10%;
 }
+ul#projects_list,
+ul.center.skills_background {
+  padding: unset;
+}
+#projects_list li a {
+  color: #ffffff;
+  align-self: center;
+}
 
-#projects_list li {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+#projects_list li a:hover {
+  background: #8d8c8c;
+  border: solid #9f9c9c 0.2em;
+  box-shadow: 0.2em 0.2em 0.3em #a7a5a5;
+  border-radius: 30% 10%;
+  opacity: 0.9;
 }
 
 .center {
@@ -121,7 +131,7 @@ img {
   flex-direction: column;
   align-items: flex-start;
   flex-wrap: wrap;
-  margin-left: 1.25rem;
+  margin-left: 1.5rem;
   flex: 1;
 }
 
@@ -134,7 +144,7 @@ p.bold_txt {
   flex-direction: column;
   align-items: flex-end;
   flex-wrap: wrap;
-  margin-right: 1.25rem;
+  margin-right: 1.5rem;
   flex: 1;
 }
 
@@ -340,3 +350,19 @@ textarea {
     font-size: 3.5rem;
   }
 }
+
+/* form {
+  padding: 3em;
+}
+label {
+  min-width: 10em;
+  font-size: 1.2rem;
+}
+input,
+textarea {
+  width: 22em;
+}
+.button {
+  padding: 0.5em;
+  font-size: 1rem;
+} */

@@ -93,3 +93,42 @@ messageForm.addEventListener("submit", function (event) {
   toggleMessagesSesction();
   messageForm.reset();
 });
+
+// Getting api from github
+
+fetch("https://api.github.com/users/Olenka2101/repos")
+  .then((response) => {
+    if (!response.ok) {
+      throw new Error(
+        "Request getting repositories failed, please try again later."
+      );
+    }
+    return response.json();
+  })
+  .then((repositories) => {
+    // repositories = JSON.parse(this.repositories)
+    console.log("Repositories:", repositories);
+    const projectSection = document.getElementById("projects");
+    const projectList = projectSection.querySelector("ul");
+    projectList.innerHTML = "";
+
+    for (let i = 0; i < repositories.length; i++) {
+      const project = document.createElement("li");
+      const link = document.createElement("a");
+      link.setAttribute("target", "_blank");
+      link.href = repositories[i].html_url;
+      link.textContent = repositories[i].name;
+      // if we don't want to include forked repositories
+      if (!repositories[i].fork) {
+        project.appendChild(link);
+        projectList.appendChild(project);
+      }
+    }
+  })
+  .catch((error) => {
+    console.error("Error fetching repositories:", error);
+    const projectSection = document.getElementById("projects");
+    const errorMessage = document.querySelector("p");
+    errorMessage.innerHTML = "Unable to load projects. Please try again.";
+    projectSection.appendChild(errorMessage);
+  });
