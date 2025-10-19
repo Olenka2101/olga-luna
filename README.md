@@ -1,6 +1,5 @@
-#olga-luna
+#Olga Sessions
 
 Intro to programming course Code the Dream
 
-#Olga Sessions
-#Olga Sessions
+

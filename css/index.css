@@ -190,7 +190,7 @@ form {
 
 label {
   display: inline-block;
-  min-width: 5.6em;
+  min-width: 5.4em;
   text-align: center;
 }
 
@@ -239,6 +239,14 @@ textarea {
   border: none;
   flex: 1;
 }
+li a {
+  max-width: 8em;
+  overflow: auto;
+}
+li span {
+  max-width: 12.5em;
+  overflow: auto;
+}
 
 .footer_class {
   display: flex;
@@ -252,8 +260,20 @@ textarea {
 /* =================================== */
 /* Small mobile */
 /* =================================== */
-
-@media (min-width: 481px) {
+@media (max-width: 435px) {
+  form {
+    width: 80%;
+    padding: 1.5em;
+  }
+  input,
+  textarea {
+    width: 80%;
+  }
+  .button {
+    margin: unset;
+  }
+}
+@media (max-width: 481px) {
   .skills_background li {
     background: whitesmoke;
     border-radius: 30% 10%;
@@ -350,19 +370,3 @@ textarea {
     font-size: 3.5rem;
   }
 }
-
-/* form {
-  padding: 3em;
-}
-label {
-  min-width: 10em;
-  font-size: 1.2rem;
-}
-input,
-textarea {
-  width: 22em;
-}
-.button {
-  padding: 0.5em;
-  font-size: 1rem;
-} */
