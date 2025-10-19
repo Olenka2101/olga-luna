@@ -5,7 +5,7 @@ Intro to programming course Code the Dream
 
 This is a portfolio project for Intro to Programming course with Code the Dream Olga Sessions.
 This web app is deployed using Vercel platform. 
-You can view this project here 
+You can view this project here https://olga-luna.vercel.app/
 A responsive web app that helps users unwind and relax.
 
 # 📖 Table of Contents
