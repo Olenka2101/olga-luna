@@ -19,29 +19,31 @@
   <body>
     <header>
       <nav>
-        <ul class="nav_bar">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#connect">Connect</a></li>
-          <li><a href="#messageMe">Message me</a></li>
-        </ul>
+        <!-- Toggle button start -->
+        <div class="nav_toggle">
+          <a href="#" class="toggle_btn">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </a>
+        </div>
+        <!-- Toggle button end -->
+        <div class="nav_links">
+          <ul class="nav_bar">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#connect">Connect</a></li>
+            <li><a href="#messageMe">Message me</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main>
-      <section id="skills">
-        <h2 class="center">Skills</h2>
-        <ul class="center skills_background"></ul>
-      </section>
-      <section id="projects">
-        <h2 class="center">Projects</h2>
-        <p class="center"></p>
-        <ul id="projects_list"></ul>
-      </section>
-      <h1 class="center heading">Olga Sessions</h1>
-      <img src="pictures/profile-pic1.jpg" alt="user_pic" height="300px" />
       <section id="about">
+        <h1 class="center heading">Olga Sessions</h1>
+        <img src="pictures/profile-pic1.jpg" alt="user_pic" height="300px" />
         <h2 class="center">About</h2>
         <p class="par">
           My greatest passion is software engineering, and I am actively
@@ -133,6 +135,15 @@
           </p>
         </div>
         <!-- Third description end -->
+      </section>
+      <section id="skills">
+        <h2 class="center">Skills</h2>
+        <ul class="center skills_background"></ul>
+      </section>
+      <section id="projects">
+        <h2 class="center">Projects</h2>
+        <p class="center"></p>
+        <ul id="projects_list"></ul>
       </section>
     </main>
     <section id="connect">
