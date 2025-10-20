@@ -1,4 +1,13 @@
-// FOOTER , DATE , COPYRIGHT
+// toggle
+const toggleBtn = document.querySelector(".toggle_btn");
+const navbarLinks = document.querySelector(".nav_links");
+
+toggleBtn.addEventListener("click", () => {
+  navbarLinks.classList.toggle("active");
+});
+// toggle end
+
+// FOOTER , DATE , COPYRIGHT // START
 
 const footer = document.createElement("footer");
 footer.className = "footer_class";
@@ -10,6 +19,7 @@ const copyright = document.createElement("p");
 copyright.className = "footer_par";
 copyright.innerHTML = `© Olga Sessions ${thisYear}`;
 footer.appendChild(copyright);
+// // FOOTER , DATE , COPYRIGHT // END
 
 // SKILLS LIST
 const skills = [
