@@ -1,12 +1,13 @@
 #olga-luna
 Intro to programming course Code the Dream
 #Olga Sessions
-# 🚀 Olga Sessions Portfolio 
+
+# 🚀 Olga Sessions Portfolio
 
 This is a portfolio project for Intro to Programming course with Code the Dream Olga Sessions.
-This web app is deployed using Vercel platform. 
+This web app is deployed using Vercel platform.
 You can view this project here https://olga-luna.vercel.app/
-Personal portfolio is a responsive web application optimized for all screen sizes and devices.
+My personal portfolio is a responsive web application optimized for all screen sizes and devices.
 
 # 📖 Table of Contents
 
@@ -16,8 +17,8 @@ Personal portfolio is a responsive web application optimized for all screen size
 - [Technologies Used](#technologies-used)
 
 # 🎬 Demo
-<img width="711" height="690" alt="Screenshot 2025-10-19 115752" src="https://github.com/user-attachments/assets/56e99742-c844-47c4-b278-4fa9b83d83ef" />
 
+<img width="711" height="690" alt="Screenshot 2025-10-19 115752" src="https://github.com/user-attachments/assets/56e99742-c844-47c4-b278-4fa9b83d83ef" />
 
 # ✨ Features
 
@@ -33,6 +34,5 @@ Personal portfolio is a responsive web application optimized for all screen size
 ⭐ CSS
 
 ## 📝 Usage
+
 This portfolio highlights my experience, personality, technical skills, and the projects I have built, while offering visitors a simple way to connect with me for more information.
-
-
