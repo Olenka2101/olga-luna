@@ -128,11 +128,16 @@ fetch("https://api.github.com/users/Olenka2101/repos")
       link.setAttribute("target", "_blank");
       link.href = repositories[i].html_url;
       link.textContent = repositories[i].name;
-      // if we don't want to include forked repositories
-      if (!repositories[i].fork) {
-        project.appendChild(link);
-        projectList.appendChild(project);
-      }
+      // if we don't want to include forked repositories we need to add this code
+      // if (!repositories[i].fork) {
+      //   project.appendChild(link);
+      //   projectList.appendChild(project);
+      // }
+      //if we don't want to include forked repositories end
+      // this block of code to append all repositories start
+      project.appendChild(link);
+      projectList.appendChild(project);
+      // this block of code to append all repositories end
     }
   })
   .catch((error) => {
