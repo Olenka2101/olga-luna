@@ -57,9 +57,9 @@ li {
 }
 
 .nav_bar li :hover {
-  background: #757474;
+  background: #7d7c7c;
   border: solid #9f9c9c 0.2em;
-  box-shadow: 0.2em 0.2em 0.2em #a7a5a5;
+  box-shadow: 0.175em 0.175em 0.175em #a7a5a5;
   border-radius: 30% 10%;
   opacity: 0.9;
 }
@@ -82,6 +82,23 @@ li {
   border-radius: 10px;
 }
 /* Toggle button end */
+/* background section about start */
+#about,
+#experience,
+#skills,
+#projects,
+#connect,
+#messageMe {
+  background-color: #6f73735b;
+  box-shadow: 0.5em 0.5em 0.5em #34333388;
+  max-width: 70em;
+  margin: 1.25px auto;
+  border-radius: 1em;
+  margin-bottom: 50px;
+
+  padding-bottom: 50px;
+}
+/* background section about start */
 
 #skills,
 #projects {
@@ -296,10 +313,18 @@ li span {
   .button {
     margin: unset;
   }
-  /* clear sticky nev bar */
-  /* nav ul {
-    background-color: #3f404049;
-  } */
+  /* background section about start */
+  #about,
+  #experience,
+  #skills,
+  #projects,
+  #connect,
+  #messageMe {
+    /* 
+   */
+    max-width: 63em;
+  }
+  /* background section about... end*/
 }
 @media (max-width: 481px) {
   .skills_background li {
@@ -308,6 +333,18 @@ li span {
     padding: 1.2em;
     font-size: 1.1rem;
   }
+  /* background section about start */
+  #about,
+  #experience,
+  #skills,
+  #projects,
+  #connect,
+  #messageMe {
+    /* 
+   */
+    max-width: 65em;
+  }
+  /* background section about... end*/
 }
 
 /* =================================== */
@@ -361,6 +398,18 @@ li span {
   .nav_links.active {
     display: flex;
   }
+  /* background section about start */
+  #about,
+  #experience,
+  #skills,
+  #projects,
+  #connect,
+  #messageMe {
+    /* 
+   */
+    max-width: 66em;
+  }
+  /* background section about... end*/
 }
 
 /* =================================== */
@@ -380,6 +429,18 @@ li span {
   #projects {
     margin-top: 6em;
   }
+  /* background section about start */
+  #about,
+  #experience,
+  #skills,
+  #projects,
+  #connect,
+  #messageMe {
+    /* 
+   */
+    max-width: 68em;
+  }
+  /* background section about... end*/
 }
 
 /* =================================== */
